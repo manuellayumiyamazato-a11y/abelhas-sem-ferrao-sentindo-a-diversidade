@@ -133,9 +133,18 @@
         Este site não utiliza cookies nem coleta dados pessoais.
     </footer>
 
-    <script async 
-src="https://api.counterapi.dev/v1/yumi/webcomic"
-></script>
+    <p>Visualizações: <span id="contador">Carregando...</span></p>
+
+<script>
+fetch("https://api.counterapi.dev/v1/yumi/webcomic/up")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("contador").innerText = data.count;
+  })
+  .catch(() => {
+    document.getElementById("contador").innerText = "Indisponível";
+  });
+</script>
 
 </body>
 </html>
