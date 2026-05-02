@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0 10px;
+            font-size: 28px;
+        }
+
+        .contador {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .comic {
+            margin: 0;
+            padding: 0;
+        }
+
+        .comic img {
+            width: 100%;
+            max-width: 1380px;
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        footer {
+            margin: 40px 0;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Abelhas sem ferrão: sentindo a diversidade</h1>
+
+    <div class="contador">
+        Visualizações: <span id="contador">Carregando...</span>
+    </div>
+
+    <div class="comic">
+        <img src="imagens/01.jpg" alt="Página 1">
+        <img src="imagens/02.jpg" alt="Página 2">
+        <img src="imagens/03.jpg" alt="Página 3">
+        <img src="imagens/04.jpg" alt="Página 4">
+        <img src="imagens/05.jpg" alt="Página 5">
+        <img src="imagens/06.jpg" alt="Página 6">
+        <img src="imagens/07.jpg" alt="Página 7">
+        <img src="imagens/08.jpg" alt="Página 8">
+        <img src="imagens/09.jpg" alt="Página 9">
+        <img src="imagens/10.jpg" alt="Página 10">
+        <img src="imagens/11.jpg" alt="Página 11">
+        <img src="imagens/12.jpg" alt="Página 12">
+        <img src="imagens/13.jpg" alt="Página 13">
+        <img src="imagens/14.jpg" alt="Página 14">
+        <img src="imagens/15.jpg" alt="Página 15">
+        <img src="imagens/16.jpg" alt="Página 16">
+        <img src="imagens/17.jpg" alt="Página 17">
+        <img src="imagens/18.jpg" alt="Página 18">
+        <img src="imagens/19.jpg" alt="Página 19">
+        <img src="imagens/20.jpg" alt="Página 20">
+        <img src="imagens/21.jpg" alt="Página 21">
+        <img src="imagens/22.jpg" alt="Página 22">
+        <img src="imagens/23.jpg" alt="Página 23">
+        <img src="imagens/24.jpg" alt="Página 24">
+        <img src="imagens/25.jpg" alt="Página 25">
+        <img src="imagens/26.jpg" alt="Página 26">
+        <img src="imagens/27.jpg" alt="Página 27">
+        <img src="imagens/28.jpg" alt="Página 28">
+        <img src="imagens/29.jpg" alt="Página 29">
+        <img src="imagens/30.jpg" alt="Página 30">
+        <img src="imagens/31.jpg" alt="Página 31">
+        <img src="imagens/32.jpg" alt="Página 32">
+        <img src="imagens/33.jpg" alt="Página 33">
+        <img src="imagens/34.jpg" alt="Página 34">
+        <img src="imagens/35.jpg" alt="Página 35">
+        <img src="imagens/36.jpg" alt="Página 36">
+        <img src="imagens/37.jpg" alt="Página 37">
+        <img src="imagens/38.jpg" alt="Página 38">
+        <img src="imagens/39.jpg" alt="Página 39">
+        <img src="imagens/40.jpg" alt="Página 40">
+        <img src="imagens/41.jpg" alt="Página 41">
+        <img src="imagens/42.jpg" alt="Página 42">
+        <img src="imagens/43.jpg" alt="Página 43">
+        <img src="imagens/44.jpg" alt="Página 44">
+        <img src="imagens/45.jpg" alt="Página 45">
+        <img src="imagens/46.jpg" alt="Página 46">
+        <img src="imagens/47.jpg" alt="Página 47">
+        <img src="imagens/48.jpg" alt="Página 48">
+        <img src="imagens/49.jpg" alt="Página 49">
+        <img src="imagens/50.jpg" alt="Página 50">
+        <img src="imagens/51.jpg" alt="Página 51">
+        <img src="imagens/52.jpg" alt="Página 52">
+        <img src="imagens/53.jpg" alt="Página 53">
+        <img src="imagens/54.jpg" alt="Página 54">
+        <img src="imagens/55.jpg" alt="Página 55">
+        <img src="imagens/56.jpg" alt="Página 56">
+        <img src="imagens/57.jpg" alt="Página 57">
+        <img src="imagens/58.jpg" alt="Página 58">
+        <img src="imagens/59.jpg" alt="Página 59">
+        <img src="imagens/60.jpg" alt="Página 60">
+        <img src="imagens/61.jpg" alt="Página 61">
+        <img src="imagens/62.jpg" alt="Página 62">
+        <img src="imagens/63.jpg" alt="Página 63">
+        <img src="imagens/64.jpg" alt="Página 64">
+        <img src="imagens/65.jpg" alt="Página 65">
+        <img src="imagens/66.jpg" alt="Página 66">
+        <img src="imagens/67.jpg" alt="Página 67">
+        <img src="imagens/68.jpg" alt="Página 68">
+        <img src="imagens/69.jpg" alt="Página 69">
+        <img src="imagens/70.jpg" alt="Página 70">
+        <img src="imagens/71.jpg" alt="Página 71">
+        <img src="imagens/72.jpg" alt="Página 72">
+        <img src="imagens/73.jpg" alt="Página 73">
+        <img src="imagens/74.jpg" alt="Página 74">
+    </div>
+
+    <footer>
+        Este site não utiliza cookies nem coleta dados pessoais.
+    </footer>
+
+    <script>
+        fetch("https://api.countapi.xyz/hit/meuwebcomic/views")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("contador").innerText = data.value;
+            })
+            .catch(() => {
+                document.getElementById("contador").innerText = "Indisponível";
+            });
+    </script>
+
+</body>
+</html>
