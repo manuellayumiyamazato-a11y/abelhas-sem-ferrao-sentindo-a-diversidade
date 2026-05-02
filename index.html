@@ -133,16 +133,9 @@
         Este site não utiliza cookies nem coleta dados pessoais.
     </footer>
 
-    <script>
-        fetch("https://api.countapi.xyz/hit/abelhas-sem-ferrao/yumi-webcomic")
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById("contador").innerText = data.value;
-            })
-            .catch(() => {
-                document.getElementById("contador").innerText = "Indisponível";
-            });
-    </script>
+    <script async 
+src="https://api.counterapi.dev/v1/yumi/webcomic"
+></script>
 
 </body>
 </html>
